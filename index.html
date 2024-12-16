@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Quick Start - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+
+
+<div id="map" style="width: 1368px; height: 768px;"></div>
+<script>
+
+	const map = L.map('map').setView([43.18015370823581,-2.486967446020796], 10);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+
+	const marker1 = L.marker([43.05628681376896,-3.003512744573748]).addTo(map).bindPopup('10327-Mendiko Eskola HLHI');
+const marker2 = L.marker([42.55569408572482,-2.584430151038854]).addTo(map).bindPopup('10349-Samaniego-Laguardia BHI');
+const marker3 = L.marker([43.03614774884898,-2.503152019106909]).addTo(map).bindPopup('12015-Kurtzebarri HLHI');
+const marker4 = L.marker([43.184833771899115,-2.483499379110416]).addTo(map).bindPopup('12046-Amaña Herri Ikastetxea');
+const marker5 = L.marker([43.18015370823581,-2.486967446020796]).addTo(map).bindPopup('12053-Uni Eibar-Ermua LHII');
+const marker6 = L.marker([43.372307883046645,-1.801291757838953]).addTo(map).bindPopup('12071-Talaia BHI');
+const marker7 = L.marker([43.05222753226598,-2.336415524164098]).addTo(map).bindPopup('12117-Olazabal BHI');
+const marker8 = L.marker([43.03660237757387,-2.409502891515461]).addTo(map).bindPopup('12134-Urgain Errekalde Oñati');
+const marker9 = L.marker([43.092740564910876,-2.321108994555166]).addTo(map).bindPopup('12286-JM Iparragirre BHI');
+const marker10 = L.marker([43.03743219666572,-2.15183421402313]).addTo(map).bindPopup('12287-Lardizabal Herri Eskola');
+const marker11 = L.marker([43.215473944205186,-2.409810960521038]).addTo(map).bindPopup('12328-Elgoibar Ikastola');
+const marker12 = L.marker([43.05395746662244,-2.333917365251071]).addTo(map).bindPopup('12342-Haztegi Ikastola');
+const marker13 = L.marker([43.305937841848056,-2.389991379181412]).addTo(map).bindPopup('12348-Goizeko Izarra Ikastola');
+const marker14 = L.marker([43.32853608984622,-1.943390363213294]).addTo(map).bindPopup('12364-Herri Ametsa Ikastola');
+const marker15 = L.marker([43.11488639973421,-2.413993489450322]).addTo(map).bindPopup('12380-Mariaren Lagundia Ikastola');
+const marker16 = L.marker([43.28399126903538,-2.160288758778051]).addTo(map).bindPopup('12386-Salbatore Mitxelena Ikastola');
+const marker17 = L.marker([43.251997662549165,-2.387231058388486]).addTo(map).bindPopup('12389-Mendaro Ikastola');
+const marker18 = L.marker([43.30204757729859,-1.893471614864119]).addTo(map).bindPopup('12471-EGILUZE ERRENTERIA');
+const marker19 = L.marker([43.31813542202372,-1.919771514169542]).addTo(map).bindPopup('12512-La Anunciata Ikastetxea');
+const marker20 = L.marker([43.13118710028295,-2.070694677007344]).addTo(map).bindPopup('12565-Herrikide Ikastetxea');
+const marker21 = L.marker([43.29384989038622,-2.25874147739651]).addTo(map).bindPopup('12594-Zumaiena Ikastetxea');
+const marker22 = L.marker([43.21614950087456,-2.019318748635857]).addTo(map).bindPopup('12740-Leizaran BHI');
+const marker23 = L.marker([43.3423131275761,-1.809542577268169]).addTo(map).bindPopup('12967-Hirubide BHI');
+const marker24 = L.marker([43.17921172095521,-2.277029871729311]).addTo(map).bindPopup('12978-Azpeitiko Ikastola Ikasberri');
+const marker25 = L.marker([43.17353673302437,-2.308280966418536]).addTo(map).bindPopup('12985-Azkoitia BHI');
+const marker26 = L.marker([43.04742876183233,-2.19931685576411]).addTo(map).bindPopup('12996-Andramendi Ikastola');
+const marker27 = L.marker([43.262440070091706,-1.982086204758678]).addTo(map).bindPopup('13012-Hernani BHI');
+const marker28 = L.marker([43.03390126342394,-2.401653599418416]).addTo(map).bindPopup('13015-Oñati BHI');
+const marker29 = L.marker([43.099809225866885,-2.083553109713894]).addTo(map).bindPopup('13078-Imaz Bertsolaria');
+const marker30 = L.marker([43.21394881562033,-2.413233226229751]).addTo(map).bindPopup('13431-Elgoibar BHI');
+const marker31 = L.marker([43.270846,-2.020783]).addTo(map).bindPopup('13554-Oriarte BHI');
+const marker32 = L.marker([43.18032436086953,-2.2668508492919885]).addTo(map).bindPopup('13555-Urola ikastola BHI');
+const marker33 = L.marker([43.17348568579451,-2.307704061625432]).addTo(map).bindPopup('13556-Izarraitz');
+const marker34 = L.marker([43.172415993106185,-2.513667429813014]).addTo(map).bindPopup('13635-Bizilore eskola');
+const marker35 = L.marker([43.30005792077771,-2.997587568568397]).addTo(map).bindPopup('14066-Beurko BHI');
+const marker36 = L.marker([43.240834498913934,-2.881268250256899]).addTo(map).bindPopup('14087-Uribarri BHI');
+const marker37 = L.marker([43.256646391403685,-2.901861924498014]).addTo(map).bindPopup('14188-Gabriel Aresti BHI');
+const marker38 = L.marker([43.35343692273197,-3.004255320716761]).addTo(map).bindPopup('14299-Julio Caro Baroja');
+const marker39 = L.marker([43.322541982762814,-3.001573693496864]).addTo(map).bindPopup('14332-Lamiako Eskola');
+const marker40 = L.marker([43.33400483548,-2.973983908581332]).addTo(map).bindPopup('14339-Jose Miguel Barandiaran BHI');
+const marker41 = L.marker([42.991943784214605,-3.0095698279126]).addTo(map).bindPopup('14379-Urduña HLHI');
+const marker42 = L.marker([43.16016581744783,-2.777906579809391]).addTo(map).bindPopup('14455-Inazio Zubizarreta HLHI');
+const marker43 = L.marker([43.160193201250614,-2.779263401947872]).addTo(map).bindPopup('14456-Arratia BHI');
+const marker44 = L.marker([43.34270307779644,-2.82116647307853]).addTo(map).bindPopup('14537-Larramendi Ikastola');
+const marker45 = L.marker([43.26719951361408,-3.003856290262854]).addTo(map).bindPopup('14575-El Regato');
+const marker46 = L.marker([43.25553086817201,-2.918389178210045]).addTo(map).bindPopup('14619-Angeles Custodios Ikastetxea');
+const marker47 = L.marker([43.26143888423682,-2.90997003263247]).addTo(map).bindPopup('14637-El Ave María Ikastetxea');
+const marker48 = L.marker([43.27323691984336,-2.932601565460212]).addTo(map).bindPopup('14655-Jesus-Maria Bilbao Ikastetxea');
+const marker49 = L.marker([43.26360048853035,-2.907849687275416]).addTo(map).bindPopup('14657-Jesuitinas Bilbao');
+const marker50 = L.marker([43.261228414178916,-2.937387845014226]).addTo(map).bindPopup('14678-Colegio Nuestra Señora del Pilar de Bilbao');
+const marker51 = L.marker([43.19861178053466,-3.049092030497782]).addTo(map).bindPopup('14761-Avellaneda HLBHIP');
+const marker52 = L.marker([43.32355489482047,-3.035442357048762]).addTo(map).bindPopup('14808-San Francizco Javier Ikastetxea');
+const marker53 = L.marker([43.306632959130496,-2.973987960455298]).addTo(map).bindPopup('14838-Jado Ikastetxea');
+const marker54 = L.marker([43.316121358906194,-2.917862844813803]).addTo(map).bindPopup('14849-Colegio Urdaneta');
+const marker55 = L.marker([43.3606557331796,-2.508667656929374]).addTo(map).bindPopup('14925-Lekeitioko Herri Eskola');
+const marker56 = L.marker([43.16677653104953,-2.612188069317479]).addTo(map).bindPopup('15071-Abadiño BHI');
+const marker57 = L.marker([43.174971012897466,-2.576382980337958]).addTo(map).bindPopup('15073-Berriz BHI');
+const marker58 = L.marker([43.25717416702389,-2.920571783304064]).addTo(map).bindPopup('15077-Solokoetxe BHI');
+const marker59 = L.marker([43.31555789492459,-2.978061824846944]).addTo(map).bindPopup('15083-IES Astrabudua BHI');
+const marker60 = L.marker([43.352253418406,-2.842081692476077]).addTo(map).bindPopup('15108-Mungia BHI');
+const marker61 = L.marker([43.36642780963458,-3.021198091005405]).addTo(map).bindPopup('15109-Aixerrota BHI');
+const marker62 = L.marker([43.23342369251512,-2.856384800907165]).addTo(map).bindPopup('15176-Galdakao Ostalaritza Eskola');
+const marker63 = L.marker([43.13047604537145,-2.544899380369827]).addTo(map).bindPopup('15189-Elorrioko Txintxirri ikastola');
+const marker64 = L.marker([43.32607817642027,-3.033368531964035]).addTo(map).bindPopup('15625-IES Kantauri');
+const marker65 = L.marker([43.30729484560322,-2.973999878208089]).addTo(map).bindPopup('15630-Tartanga');
+const marker66 = L.marker([43.31507863981138,-3.014196286281035]).addTo(map).bindPopup('15683-Antonio Trueba IPI');
+
+const marker67 = L.marker([43.30554371969227,-2.386829097895342]).addTo(map).bindPopup('12458-Samiela Ikastetxea');
+const marker68 = L.marker([43.30005792077771,-2.997587568568397]).addTo(map).bindPopup('14066-Beurko BHI');
+const marker69 = L.marker([43.19070012201668,-2.452002556159211]).addTo(map).bindPopup('12416-Ntra. Sra. de Azitain');
+const marker70 = L.marker([42.55544846869697,-2.584979703805222]).addTo(map).bindPopup('10022-Victor Tapia');
+const marker71 = L.marker([42.505641710343696, 	-2.434288721141248]).addTo(map).bindPopup('10178-San Bizente Ikastola');
+const marker72 = L.marker([43.280855394207265, -1.9503187583383088]).addTo(map).bindPopup('13521-Astigarraga Herri Eskola HLHI');
+	// const circle = L.circle([51.508, -0.11], {
+	// 	color: 'red',
+	// 	fillColor: '#f03',
+	// 	fillOpacity: 0.5,
+	// 	radius: 500
+	// }).addTo(map).bindPopup('I am a circle.');
+
+	// const polygon = L.polygon([
+	// 	[51.509, -0.08],
+	// 	[51.503, -0.06],
+	// 	[51.51, -0.047]
+	// ]).addTo(map).bindPopup('I am a polygon.');
+
+
+	// const popup = L.popup()
+	// 	.setLatLng([51.513, -0.09])
+	// 	.setContent('I am a standalone popup.')
+	// 	.openOn(map);
+
+	// function onMapClick(e) {
+	// 	popup
+	// 		.setLatLng(e.latlng)
+	// 		.setContent(`You clicked the map at ${e.latlng.toString()}`)
+	// 		.openOn(map);
+	// }
+
+	// map.on('click', onMapClick);
+
+</script>
+
+
+</body>
+</html>
