@@ -1,0 +1,194 @@
+// Responsive mixins using "Bootstrap" breakpoints
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media only screen and (min-width: 992px) {
+        
+    }
+  }
+  
+  @mixin large {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+header#menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    a {
+      img.logo {
+        height: 50px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: #a8a8a8;
+          font-weight: 700;
+          font-size: 1.1rem;
+          padding: 0.5rem 1rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+body {
+  padding-top: 80px;
+}
+
+.aurkezpena {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f8f9fc;
+
+  .flex-item1 {
+    max-width: 50%;
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    div {
+      display: flex;
+      gap: 15px;
+
+      .btn-principal {
+        background-color: #4f80ff;
+        color: white;
+        padding: 12px 24px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .btn-secundario {
+        background-color: #4b4b4b;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .flex-item2 {
+    img {
+      border-radius: 10px;
+      margin-right: 200px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.zerbitzu-titulu {
+  h2 {
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+  }
+}
+
+.zerbitzu-mota {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+
+  div {
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    i {
+      font-size: 3rem;
+      color: #4f80ff;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
+
+footer {
+  background: #333;
+  .logo-foot {
+    height: 50px;
+  }
+
+  p{
+    color: rgb(148, 146, 146);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+
